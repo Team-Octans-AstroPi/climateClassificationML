@@ -41,4 +41,5 @@ _________________________________________________________________
 We achieved 97% validation accuracy, and 77% accuracy on new test data.
 
 As shown in the graph below, on our dataset, around 450 epochs, the learning rate stalled. This is why we limited the model to 450 epochs.<br><br>
-![validation accuracy and loss graph](https://github.com/Team-Octans-AstroPi/climateClassificationML/assets/80255379/cd8b2031-e120-4083-a389-d08fc161ea89)
+![Validation accuracy and loss graph](https://github.com/Team-Octans-AstroPi/climateClassificationML/assets/80255379/8ef91936-63f6-470e-96e5-e8fdc5eb0df6)
+
