@@ -2,11 +2,11 @@
 This repository includes the code used to train and test our climate classification machine learning model, using Keras. This requires a dataset generated with [code from this repository](https://github.com/Team-Octans-AstroPi/climateCSVgenerator).
 
 ### Data from <picture><source media="(prefers-color-scheme: dark)" srcset="https://weatherkit.apple.com/assets/branding/en/Apple_Weather_wht_en_3X_090122.png"><source media="(prefers-color-scheme: light)" srcset="https://weatherkit.apple.com/assets/branding/en/Apple_Weather_blk_en_3X_090122.png"><img src="" height="18" alt="Apple Weather Logo"></picture>
-The dataset used by this model, generated using [this code](https://github.com/Team-Octans-AstroPi/climateCSVgenerator), uses data from Apple Weather, that may be modified and used for training the ML model in other repositories.
+The dataset used to train this model, generated using [this code](https://github.com/Team-Octans-AstroPi/climateCSVgenerator), uses data from Apple Weather.
 Data sources attribution: https://developer.apple.com/weatherkit/data-source-attribution/.
 
 ### Data from climateapi.scottpinkelman.com
-The dataset used by this model, generated using [this code](https://github.com/Team-Octans-AstroPi/climateCSVgenerator), uses data from http://climateapi.scottpinkelman.com.
+The dataset used to train this model, generated using [this code](https://github.com/Team-Octans-AstroPi/climateCSVgenerator), uses data from http://climateapi.scottpinkelman.com.
 It uses data from the Institute for Veterinary Public Health and the Provincial Government of Carinthia in Austria.
 
 <b>Citation:</b><br>
