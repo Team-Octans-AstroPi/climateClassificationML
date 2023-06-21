@@ -1,12 +1,12 @@
 # ClimateClassificationML
-This repository includes the code used to train and test our climate classification machine learning model, using Keras. This requires a dataset generated with [code from this repository](https://github.com/Team-Octans-AstroPi/climateCSVgenerator).
+This repository includes the code used to train and test our climate classification machine learning model, built using Keras. This requires a dataset generated with code from the [climateCSVgenerator repository](https://github.com/Team-Octans-AstroPi/climateCSVgenerator).
 
 ### Data from <picture><source media="(prefers-color-scheme: dark)" srcset="https://weatherkit.apple.com/assets/branding/en/Apple_Weather_wht_en_3X_090122.png"><source media="(prefers-color-scheme: light)" srcset="https://weatherkit.apple.com/assets/branding/en/Apple_Weather_blk_en_3X_090122.png"><img src="" height="18" alt="Apple Weather Logo"></picture>
-The dataset used to train this model, generated using [this code](https://github.com/Team-Octans-AstroPi/climateCSVgenerator), uses data from Apple Weather.
+The dataset required to train this model, generated using [this code](https://github.com/Team-Octans-AstroPi/climateCSVgenerator), uses data from Apple Weather.
 Data sources attribution: https://developer.apple.com/weatherkit/data-source-attribution/.
 
 ### Data from climateapi.scottpinkelman.com
-The dataset used to train this model, generated using [this code](https://github.com/Team-Octans-AstroPi/climateCSVgenerator), uses data from http://climateapi.scottpinkelman.com.
+The dataset required to train this model, generated using [this code](https://github.com/Team-Octans-AstroPi/climateCSVgenerator), uses data from http://climateapi.scottpinkelman.com.
 It uses data from the Institute for Veterinary Public Health and the Provincial Government of Carinthia in Austria.
 
 <b>Citation:</b><br>
@@ -16,7 +16,7 @@ Kottek, M., J. Grieser, C. Beck, B. Rudolf, and F. Rubel, 2006: World Map of the
 - `tfclimatemodel.py` is the Tensorflow code used to make and train our model. It also saves this model as a `.tflite` to be able to test it on a Raspberry Pi with Coral Edge TPU.
 - `coral-test-rpi.py` is a program designed to run on a Raspberry Pi with a Coral Edge TPU, which tests the whole data
 
-## Model structure
+## Model structure and performance
 Here is the model's summary, printed by Tensorflow:
 ```
 Model: "sequential"
@@ -38,7 +38,6 @@ Non-trainable params: 0
 _________________________________________________________________
 ```
 
-## Model Performance
 We achieved 97% validation accuracy, and 77% accuracy on new test data.
 
 As shown in the graph below, on our dataset, around 450 epochs, the learning rate stalled. This is why we limited the model to 450 epochs.<br><br>
